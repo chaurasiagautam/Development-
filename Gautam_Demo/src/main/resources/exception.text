@@ -1,0 +1,79 @@
+org.xml.sax.SAXParseException: cvc-elt.1: Cannot find the declaration of element 'x:businessTransaction'.", line="2", column="135", xsdName="com/hm/integration/i216/contracts/in/wms/v1.7/orderStatus.xsd", errorFile="I216_XP07_MX_00000001_000_20200615103451.xml"
+
+org.apache.camel.processor.validation.SchemaValidationException: Validation failed for: com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchema@180ff888
+
+errors: [
+
+org.xml.sax.SAXParseException: cvc-elt.1: Cannot find the declaration of element 'x:businessTransaction'., Line : 2, Column : 135
+
+]. Exchange[ID-integration-i216-xp07-55bcc88f8b-8b6fz-1592909304989-0-2]
+
+	at org.apache.camel.processor.validation.DefaultValidationErrorHandler.handleErrors(DefaultValidationErrorHandler.java:76)
+
+	at org.apache.camel.processor.validation.ValidatingProcessor.doProcess(ValidatingProcessor.java:164)
+
+	at org.apache.camel.processor.validation.ValidatingProcessor.process(ValidatingProcessor.java:89)
+
+	at org.apache.camel.component.validator.ValidatorProducer.process(ValidatorProducer.java:37)
+
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:148)
+
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+
+	at org.apache.camel.component.direct.DirectBlockingProducer.process(DirectBlockingProducer.java:53)
+
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:148)
+
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+
+	at org.apache.camel.component.file.GenericFileConsumer.processExchange(GenericFileConsumer.java:452)
+
+	at org.apache.camel.component.file.GenericFileConsumer.processBatch(GenericFileConsumer.java:219)
+
+	at org.apache.camel.component.file.GenericFileConsumer.poll(GenericFileConsumer.java:183)
+
+	at org.apache.camel.impl.ScheduledPollConsumer.doRun(ScheduledPollConsumer.java:174)
+
+	at org.apache.camel.impl.ScheduledPollConsumer.run(ScheduledPollConsumer.java:101)
+
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+
+	at java.lang.Thread.run(Thread.java:748)
